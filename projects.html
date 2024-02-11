@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="bg-black text-white">
         <div id="main">
-            <div id="nav">
+            <div id="nav" class="flex justify-between p-8 text-2xl">
                 <div>
                     <a>Beck Burnham</a>
                 </div>
-                <div id="pages">
+                <div id="pages" class="">
                     <a href="index.html">Home</a>
                     <a href="projects.html">Projects</a>
                     <a href="contact.html">Contact</a>
                 </div>
             </div>
-            <div>
+            <div class="text-center text-2xl">
+                <a href="#" id="projectLink" class="underline">Check Out My Projects Here</a>
+                <p id="githubLink">https://github.com/Beck2003?tab=repositories</p>
+            </div>
+            <script>
+                // Get the <a> and <p> elements
+                var aElement = document.getElementById('projectLink');
+                var pElement = document.getElementById('githubLink');
+            
+                // Get the link from the <p> tag
+                var link = pElement.textContent;
+            
+                // Set the href attribute of the <a> tag
+                aElement.setAttribute('href', link);
+            </script>
+
+            <div class="p-8 text-2xl underline">
                 <p>Some recent projects</p>
             </div>
-            <div id="white">
-                <img src="images/banking-dashboard.png" id="pro">
+            <div id="black" class="flex text-white p-8">
+                <img src="images/Screen Shot 2024-02-11 at 2.46.49 PM.png" id="pro" class="h-40 w-50 pr-8">
                 <div>
-                    <h1>SASS</h1>
+                    <h1 class="text-2xl underline">JavaScript React/ Next.js</h1>
+                    <p>In this project I worked with React and Next.js. I used pexels API and got/ displayed their images in order to make an image gallery its fully functional and mobile friendly. When you click an image it tells you the photographer and is dispalyd in a full sreen. You have a search bar and can look up differnt queries and select multiple queries.</p>
+                </div>
+            </div>
+            <div id="white" class="flex bg-white text-black p-8">
+                <img src="images/banking-dashboard.png" id="pro" class="h-40 w-50 pr-8">
+                <div>
+                    <h1 class="text-2xl underline">SASS</h1>
                     <p>In this this website I styled a banking dashboard using SASS. I  used main feaurures of it that include modules, mixins as well as extend/inheritance. It is not functioning as I was just getting a feel for using the framework.</p>
                 </div>
             </div>
-            <div id="black">
-                <img src="images/devcourse.png" id="pro">
+            <div id="black" class="flex p-8">
                 <div>
-                    <h1>Bootstrap</h1>
+                    <h1 class="text-2xl underline">Bootstrap</h1>
                     <p>Heres a webpage I built using bootstrap. I made it so it will be useable on a phone as well. When the screen shrinks to a phones size the nav bar at the bottom stacks to make it better on mobile.</p>
                 </div>
+                <img src="images/devcourse.png" id="pro" class="h-40 w-50 pl-8">
             </div>
-            <div id="white">
-                <img src="images/golf-scorecard.png" id="pro">
+            <div id="white" class="flex bg-white text-black p-8">
+                <img src="images/golf-scorecard.png" id="pro" class="h-40 w-50 pr-8">
                 <div>
-                    <h1>JavaScript</h1>
+                    <h1 class="text-2xl underline">JavaScript</h1>
                     <p>This app is a golf scorecard that uses an api in order to get data from the three courses that I used. Then once a course is selected all that courses information is displayed in the boxes. Theres a textbox that allows a user to enter a name and every score the user enters is automatically added up and put in the totals box.</p>
                 </div>
             </div>
-            <div id="black">
-                <img src="images/netflix-dashboard.png" id="pro">
+            <div id="black" class="flex p-8">
                 <div>
-                    <h1>Tailwind</h1>
+                    <h1 class="text-2xl underline">Tailwind</h1>
                     <p>This a webpage I made using tailwind. I made it so that on mobile it will still look good. The whole point point of this project was to just get a feel for tailwind and now Im very comfortable using it.</p>
                 </div>
+                <img src="images/netflix-dashboard.png" id="pro" class="h-40 w-50 pl-8">
             </div>
-            <div id="white">
-                <img src="images/RY-Paris.png" id="pro">
+            <div id="white" class="flex bg-white text-black p-8">
+                <img src="images/RY-Paris.png" id="pro" class="h-40 w-50 pr-8">
                 <div>
-                    <h1>HTML/CSS</h1>
+                    <h1 class="text-2xl underline">HTML/CSS</h1>
                     <p>Heres a website for a food blog. Its a multi page blog and gives you some background as well as a recipe. It is still basic however, because I just wanted to work on my design more to get better.</p>
                 </div>
             </div>
-            <div id="black">
-                <img src="images/todo-app.png" id="pro">
+            <div id="black" class="flex p-8">
                 <div>
-                    <h1>JavaScript</h1>
+                    <h1 class="text-2xl underline">JavaScript</h1>
                     <p>This app is just a todo list. It gives you the option to make and name as many lists as you'd like. You can go into those lists and create as many tasks as you want. You can edit, delete, and mark these tasks as completed.</p>
                 </div>
+                <img src="images/todo-app.png" id="pro" class="h-40 w-50 pl-8">
             </div>
         </div>
     </body>

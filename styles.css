@@ -20,6 +20,10 @@ body {
     font-size: x-large;
 }
 
+a {
+    color: whitesmoke;
+}
+
 #profile {
     color: whitesmoke;
     display: flex;

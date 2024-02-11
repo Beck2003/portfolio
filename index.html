@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     </head>
-    <body>
-        <div id="main">
-        <div id="nav">
+    <body class="bg-black text-white">
+        <!-- <div id="main" class=""> -->
+        <div id="nav" class="flex justify-between p-8 text-2xl">
             <div>
                 <a>Beck Burnham</a>
             </div>
-            <div id="pages">
+            <div id="pages" class="">
                 <a href="index.html">Home</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>
-        <div id="profile">
-            <img src="pro.jpeg" id="pic">
-            <div class="name">Hey, I'm Beck Burnham</div>
+        <div id="profile" class="text-center p-8">
+            <img src="pro.jpeg" id="pic" class="h-20 w-20 mx-auto rounded-full border-2 border-white p-1">
+            <div class="name ">Hey, I'm Beck Burnham</div>
         </div>
         <div id="intro">
-            <h1>Im a student at mtech in the web development and programming course. Im looking for an internship and eager to start working!</h1>
+            <h1 class="text-4xl text-center">Im a student at mtech in the web development and programming course. Im looking for an internship and eager to start working!</h1>
         </div>
+        <div id="about" class="p-8">
+            <h1 class="text-2xl text-center underline">About me</h1>
+            <p class="text-center">As a motivated professional with a background in retail service, I am eager to transition into the dynamic field of web development and programming. Over the course of my career, I have honed valuable skills in adaptability, effective communication, and a strong work ethic.Proficient in a range of languages and frameworks including HTML, CSS, Bootstrap, SASS, Tailwind, JavaScript, React, Typescript, and Angular.
+                Experienced in Back-End Development, encompassing Back-End servers, Database management, Hosting, Deployment, Security, and Automated QA.
+                Familiarity with AWS, currently completing a course to further enhance skills in cloud computing.
+                Career Objective:
+                Seeking an internship opportunity in UX/UI design, Front-End Development, or Quality Assurance Technician roles. Armed with a diverse skill set and a solid foundation in web development, I am eager to contribute my technical expertise and passion for creating seamless user experiences.</p>
         </div>
+        <!-- </div> -->
     </body>
 </html>
